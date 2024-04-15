@@ -55,7 +55,7 @@ dropdownBtns.forEach((btn) => {
   });
 });
 
-//bolum 4 scroll
+//bolum 4 boxes
 
 const b4_box_items = [
   {
@@ -129,6 +129,55 @@ b4_next_prev_btn.forEach((btn) => {
   };
 });
 
+//bolum 4 boxes
+const b5_box_items = [
+  {
+    img: "https://dg1xqmhtoint1.cloudfront.net/img/vadodara/blog/blog-chef.webp?mtime=20220615123310&focal=none",
+    h3: "Famil Abbasov",
+  },
+  {
+    img: "https://www.heraldtribune.com/gcdn/authoring/2019/06/26/NSHT/ghows-LK-8c18d1ea-2228-1fe7-e053-0100007f4e92-7ed4c5c4.jpeg?width=660&height=440&fit=crop&format=pjpg&auto=webp",
+    h3: "Brem Rahimov",
+  },
+  {
+    img: "https://facts.net/wp-content/uploads/2023/09/20-surprising-facts-about-chef-1695688578.jpg",
+    h3: "Aygün Rahimli",
+  },
+  {
+    img: "https://nationaltoday.com/wp-content/uploads/2021/07/shutterstock_1518533924-min.jpg",
+    h3: "Turan Məmmədov",
+  },
+  {
+    img: "https://www.simplybusiness.co.uk/static/896d58b532c8e2ec7ac1719fe62b37ae/b6518/how-to-become-a-chef.jpg",
+    h3: "Məleykə Karimli",
+  },
+  {
+    img: "https://www.hitsa.com.au/wp-content/uploads/types-of-chefs-1030x687.jpg",
+    h3: "Orxan İsmetli",
+  },
+];
+
+window.addEventListener("DOMContentLoaded", b5_display);
+const b5_boxes = document.querySelector(".b5_boxes");
+
+function b5_display() {
+  let B5_display = b5_box_items.map((item) => {
+    return `<div class="b5_box">
+                  <img
+                   src="${item.img}"
+                   alt="img_bolum_5"
+                 />
+                 <h3>${item.h3}</h3>
+                 <p>
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aut,
+                  eum.
+               </p>
+                </div>`;
+  });
+  B5_display = B5_display.join("");
+  b5_boxes.innerHTML = B5_display;
+}
+
 //bolum 5 (bizim komanda) scroll button
 
 const b5_next_prev_btn = document.querySelectorAll(".b5_next_prev");
@@ -136,6 +185,6 @@ const b5_bar = document.querySelector(".b5_bar");
 
 b5_next_prev_btn.forEach((btn) => {
   btn.onclick = () => {
-    b5_bar.scrollLeft += btn.id == "b5_prev" ? -700 : 700;
+    b5_bar.scrollLeft += btn.id == "b5_prev" ? -900 : 900;
   };
 });
