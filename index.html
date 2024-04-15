@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WebSite</title>
+    <!-- CDNJS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- splideJS (scroll) -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css"
+    />
+
+    <!-- css link -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="navbar_container">
+        <div class="logo">
+          <img
+            src="logo.png"
+            style="width: 130px; margin-left: -25px"
+            alt="logo"
+            class="logo_img"
+          />
+        </div>
+        <div class="main_menu">
+          <ul>
+            <li><a href="" id="menu_active">Ana Səhifə</a></li>
+            <li><a href="">Haqqımızda </a></li>
+            <li class="dropdowns">
+              <span>Menyu</span>
+              <i
+                style="transition: 0.3s"
+                class="fa-solid fa-chevron-down menu_chevron_down"
+              ></i>
+            </li>
+            <li><a href="">Qaleriya</a></li>
+            <li><a href="">Blog</a></li>
+            <li><a href="">Əlaqə</a></li>
+          </ul>
+          <div class="dropdown">
+            <i class="fa-solid fa-xmark dropdown_close_i"></i>
+            <div class="triangle"></div>
+            <div class="dropdown_boxes">
+              <div class="dropdown_box_btns">
+                <button class="dropdown_btn dropdown_btn_active">
+                  <img
+                    src="https://cafecity.az/media/product_image/TUNA-SALATI_s3ieKPq.jpg.600x600_q85_box-0%2C0%2C600%2C600_crop_detail.jpg"
+                    alt=""
+                    class="dropdown_btn_img"
+                  />
+                  <span>Salatlar</span>
+                  <i class="fa-solid fa-chevron-right"></i>
+                </button>
+                <button class="dropdown_btn">
+                  <img
+                    src="https://cdn.yemek.com/mnresize/1250/833/uploads/2023/04/et-durum-onecikan.jpg"
+                    alt=""
+                    class="dropdown_btn_img"
+                  />
+                  <span>Dürümlər</span>
+                  <i class="fa-solid fa-chevron-right"></i>
+                </button>
+                <button class="dropdown_btn">
+                  <img
+                    src="https://www.allrecipes.com/thmb/fFW1o307WSqFFYQ3-QXYVpnFj6E=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/48727-Mikes-homemade-pizza-DDMFS-beauty-4x3-BG-2974-a7a9842c14e34ca699f3b7d7143256cf.jpg"
+                    alt=""
+                    class="dropdown_btn_img"
+                  />
+                  <span>Pizzalar</span>
+                  <i class="fa-solid fa-chevron-right"></i>
+                </button>
+                <button class="dropdown_btn">
+                  <img
+                    src="https://publika.az/storage/2017/07/03/kabab1.jpg"
+                    alt=""
+                    class="dropdown_btn_img"
+                  />
+                  <span>Kabablar</span>
+                  <i class="fa-solid fa-chevron-right"></i>
+                </button>
+                <button class="dropdown_btn">
+                  <img
+                    src="https://cdn.yeniavaz.com/uploadedfiles/custom/2019/7/26/1/542f6e62-23f5-4448-a212-b52ab20a4e85/seher-yemeyi.jpg"
+                    alt=""
+                    class="dropdown_btn_img"
+                  />
+                  <span>Səhər yeməyi</span>
+                  <i class="fa-solid fa-chevron-right"></i>
+                </button>
+                <button class="dropdown_btn">
+                  <img
+                    src="https://akustik.az/uploads/posts/2021-01/1612007057_tomat-supu-507x285.jpg"
+                    alt=""
+                    class="dropdown_btn_img"
+                  />
+                  <span>Şorbalar</span>
+                  <i class="fa-solid fa-chevron-right"></i>
+                </button>
+                <button class="dropdown_btn">
+                  <img
+                    src="https://tribunainfo.az/public/uploads/2023/11/tia_94fbda14932717d55faeb3f97ad750e5_tpyr7x0mlfujgvok96ie.jpg"
+                    alt=""
+                    class="dropdown_btn_img"
+                  />
+                  <span>Dönərlər</span>
+                  <i class="fa-solid fa-chevron-right"></i>
+                </button>
+                <button class="dropdown_btn">
+                  <img
+                    src="https://img-s1.onedio.com/id-622e5afab3bea8541154d04c/rev-0/w-600/h-337/f-jpg/s-b872f2ece6faa7a210036e5ea6eb2baec87d9f91.jpg"
+                    alt=""
+                    class="dropdown_btn_img"
+                  />
+                  <span>Tatlılar</span>
+                  <i class="fa-solid fa-chevron-right"></i>
+                </button>
+                <button class="dropdown_btn">
+                  <img
+                    src="https://cafecity.az/media/product_image/%D0%A1%D0%B0%D0%B4%D0%B6-%D1%81-%D0%BC%D1%8F%D1%81%D0%BE%D0%BC-%D1%8F%D0%B3%D0%BD%D0%B5%D0%BD%D0%BA%D0%B0.png.600x600_q85_box-0%2C0%2C1200%2C1200_crop_detail.jpg"
+                    alt=""
+                    class="dropdown_btn_img"
+                  />
+                  <span>Saclar</span>
+                  <i class="fa-solid fa-chevron-right"></i>
+                </button>
+                <button class="dropdown_btn">
+                  <img
+                    src="https://cdn.oxu.az/uploads/W1siZiIsIjIwMTUvMDgvMzEvMTMvMTYvMjkvMTgwL3N1LmpwZyJdLFsicCIsImVuY29kZSIsImpwZyIsIi1xdWFsaXR5IDgwIl0sWyJwIiwidGh1bWIiLCI2MjB4NDY1XHUwMDNlIl1d?sha=983b9de43e29ed3b"
+                    alt=""
+                    class="dropdown_btn_img"
+                  />
+                  <span>İçkilər</span>
+                  <i class="fa-solid fa-chevron-right"></i>
+                </button>
+              </div>
+              <div class="dropdown_contents">
+                <div class="dropdown_content dropdown_content_active">
+                  <span>Salatlar</span>
+                  <a href="">Paytaxt</a>
+                  <a href="">Göbələk</a>
+                  <a href="">Mimoza</a>
+                  <a href="">Çoban salatı</a>
+                  <a href="">Sezar</a>
+                  <a href="">Manqal</a>
+                </div>
+                <div class="dropdown_content">
+                  <span>Dürümlər</span>
+                  <a href="">Toyuq dürüm</a>
+                  <a href="">Adana dürüm</a>
+                  <a href="">Urfa dürüm</a>
+                  <a href="">Quzu dürüm</a>
+                </div>
+                <div class="dropdown_content">
+                  <span>Pizzalar</span>
+                  <a href="">Marqarita</a>
+                  <a href="">Sucuqlu</a>
+                  <a href="">göbələkli</a>
+                  <a href="">ətli</a>
+                  <a href="">qarışıq</a>
+                </div>
+                <div class="dropdown_content">
+                  <span>Kabablar</span>
+                  <a href="">Adana</a>
+                  <a href="">quzu</a>
+                  <a href="">toyuq</a>
+                  <a href="">ciyər</a>
+                  <a href="">Xan kababı</a>
+                  <a href="">kartof lülə</a>
+                </div>
+                <div class="dropdown_content">
+                  <span>Səhər yeməyi</span>
+                  <a href="">Menemen</a>
+                  <a href="">Qlazok</a>
+                  <a href="">Sucuqlu yumurta</a>
+                  <a href="">Omlet</a>
+                  <a href="">Kükü</a>
+                  <a href="">bal</a>
+                  <a href="">motal pendiri</a>
+                  <a href="">yağ pendir</a>
+                </div>
+                <div class="dropdown_content">
+                  <span>Şorbalar</span>
+                  <a href="">Mərci</a>
+                  <a href="">toyuq</a>
+                  <a href="">pomidor</a>
+                  <a href="">dovğa</a>
+                  <a href="">borş</a>
+                  <a href="">ət supu</a>
+                </div>
+                <div class="dropdown_content">
+                  <span>Dönərlər</span>
+                  <a href="">Ət çörək</a>
+                  <a href="">Ət lavaş</a>
+                  <a href="">Toyuq çörək</a>
+                  <a href="">toyuq lavaş</a>
+                  <a href="">isgəndər</a>
+                </div>
+
+                <div class="dropdown_content">
+                  <span>Tatlılar</span>
+                  <a href="">Türk paxlavası</a>
+                  <a href="">sütlac</a>
+                  <a href="">Islak kek</a>
+                  <a href="">quba paxlavası</a>
+                  <a href="">tort</a>
+                </div>
+                <div class="dropdown_content">
+                  <span>Saclar</span>
+                  <a href="">quzu sac</a>
+                  <a href="">ət sac</a>
+                  <a href="">toyuq sac</a>
+                  <a href="">qarışıq sac</a>
+                </div>
+                <div class="dropdown_content">
+                  <span>İçkilər</span>
+                  <a href="">Kola</a>
+                  <a href="">Fanta</a>
+                  <a href="">Qazlı su</a>
+                  <a href="">Qazsız su</a>
+                  <a href="">Kompot</a>
+                  <a href="">Ayran</a>
+                  <a href="">Sirab</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- Main içeriği -->
+    <main>
+      <!-- Birinci bölüm -->
+      <div class="sosial_divs">
+        <div class="sosial">
+          <div class="romb facebook">
+            <i class="fab fa-facebook-f"></i>
+          </div>
+          <div class="romb instagram">
+            <i class="fab fa-instagram"></i>
+          </div>
+          <div class="romb twitter">
+            <i class="fa-brands fa-x-twitter"></i>
+          </div>
+        </div>
+      </div>
+      <section id="bolum1" class="sayfa">
+        <div class="b1_text b1">
+          <h2>Məkan <span>Dadlı</span><br />Yemək dadlı</h2>
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Pariatur
+            minus unde dolor dolore eius adipisci.
+          </p>
+          <div class="b1_text_btns b1">
+            <button><span>Rezervasiya</span></button>
+            <button><span>Menyunu kəşf et</span></button>
+          </div>
+        </div>
+        <div class="b1_img">
+          <img
+            src="https://png.pngtree.com/png-clipart/20231005/original/pngtree-burger-and-fries-delicious-fast-food-combo-transparent-background-png-image_13279170.png"
+            alt=""
+          />
+        </div>
+      </section>
+      <!-- İkinci bölüm -->
+      <section id="bolum2" class="sayfa">
+        <h2>Niyə bizi seçməlisiniz?</h2>
+        <div class="b2_boxes">
+          <div class="b2_box">
+            <i class="fa-solid fa-utensils"></i>
+            <h3>Keyfiyyətli qida</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius
+              fugiat accusantium accusamus voluptate eum sunt aut repellendus,
+              neque rem sed.
+            </p>
+          </div>
+          <div class="b2_box">
+            <i class="fa-solid fa-bowl-food"></i>
+            <h3>Sağlam qida</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius
+              fugiat accusantium accusamus voluptate eum sunt aut repellendus,
+              neque rem sed.
+            </p>
+          </div>
+          <div class="b2_box">
+            <i class="fa-solid fa-truck"></i>
+            <h3>Sürətli çatdırılma</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius
+              fugiat accusantium accusamus voluptate eum sunt aut repellendus,
+              neque rem sed.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Üçüncü bölüm -->
+      <section id="bolum3" class="sayfa">
+        <div class="b3_boxes">
+          <div class="b3_img">
+            <img
+              src="https://png.pngtree.com/png-clipart/20230322/ourmid/pngtree-pizza-food-fast-food-cartoon-illustration-decorative-pattern-png-image_6656898.png"
+              alt="b3_img"
+            />
+          </div>
+          <div class="b3_content">
+            <h2>Haqqımızda</h2>
+            <p>
+              Əsasən yeməksevərlərin xoşbəxtlik və zövq almaq üçün yaradılmış
+              restoranımız, yemək məkanları arasında istənilən mənzilə
+              çatmışdır. Yemək memarlığındakı peşəkarlığımız, təcrübəmiz və
+              mövqeyimizlə, müştərilərimizə möhtəşəm bir təcrübə təklif edirik.
+              Restoranımızda təzə, peşəkar və yağsız təamlarımız, möhtəşəm
+              atmosferimiz və əyləncəli tədbirlərimizlə, mükəmməl bir yemək
+              keyfi təmin edirik. Bizimlə birlikdə təcrübəli bir şefin mətnindən
+              istifadə edin və damaq tadınızı zövqləndirin. Sizə qonaq olmaqdan
+              məmnunluq duyacağıq!
+            </p>
+            <button class="b3_btn">Daha ətraflı</button>
+          </div>
+        </div>
+      </section>
+
+      <!-- Dördüncü bölüm -->
+      <section id="bolum4" class="sayfa">
+        <h2>Populyar yeməklər</h2>
+        <div class="b4_bar">
+          <div class="b4_boxes">
+            <!-- JS İLE -->
+            <!-- <div class="b4_box">
+              <img
+                src="https://png.pngtree.com/png-clipart/20230322/ourmid/pngtree-italian-pizza-gourmet-fast-food-cartoon-illustration-three-dimensional-decorative-pattern-png-image_6656982.png"
+                alt="b4_img"
+              />
+              <div class="b4_box_name_star">
+                <h3>Pizza - Marqairta</h3>
+                <h3><span>4.6 </span><i class="fa-solid fa-star"></i></h3>
+              </div>
+              <div class="b4_box_price_moreBtn">
+                <h4>20₼</h4>
+                <button>Ətraflı</button>
+              </div>
+            </div> -->
+          </div>
+        </div>
+        <div class="b4_next_prev_btns">
+          <i class="fa-solid fa-chevron-left b4_next_prev" id="b4_prev"></i>
+          <i class="fa-solid fa-chevron-right b4_next_prev" id="b4_next"></i>
+        </div>
+      </section>
+      <!-- Beşinci bölüm -->
+      <section id="bolum5" class="sayfa">
+        <h2>Bizim komanda</h2>
+        <div class="b5_bar">
+          <div class="b5_boxes">
+            <!-- JS İLE -->
+            <div class="b5_box">
+              <img
+                src="https://static.vecteezy.com/system/resources/previews/036/048/605/original/ai-generated-happy-chef-crossed-arms-isolated-on-transparent-background-ai-png.png"
+                alt="b5_img"
+                style="width: 350px"
+              />
+              <h3>Alik Abbasov</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illo,
+                reprehenderit.
+              </p>
+            </div>
+            <div class="b5_box">
+              <img
+                src="https://pngimg.com/d/chef_PNG189.png"
+                style="width: 190px"
+                alt="b5_img"
+              />
+              <h3>Alik Abbasov</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illo,
+                reprehenderit.
+              </p>
+            </div>
+            <div class="b5_box">
+              <img
+                src="https://www.pngkey.com/png/full/15-159926_chef-png.png"
+                alt="b5_img"
+                style="width: 140px"
+              />
+              <h3>Alik Abbasov</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illo,
+                reprehenderit.
+              </p>
+            </div>
+            <div class="b5_box">
+              <img
+                src="https://purepng.com/public/uploads/thumbnail//purepng.com-chefcheftrained-professional-cookfood-preparationkitchenchefsexperienced-1421526669634vaiuq.png"
+                alt="b5_img"
+                style="width: 143px"
+              />
+              <h3>Alik Abbasov</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illo,
+                reprehenderit.
+              </p>
+            </div>
+            <div class="b5_box">
+              <img src="" alt="b5_img" />
+              <h3>Alik Abbasov</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illo,
+                reprehenderit.
+              </p>
+            </div>
+            <div class="b5_box">
+              <img src="" alt="b5_img" />
+              <h3>Alik Abbasov</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illo,
+                reprehenderit.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="b5_next_prev_btns">
+          <i class="fa-solid fa-chevron-left b5_next_prev" id="b5_prev"></i>
+          <i class="fa-solid fa-chevron-right b5_next_prev" id="b5_next"></i>
+        </div>
+      </section>
+    </main>
+
+    <script src="app.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+      integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
+      integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
