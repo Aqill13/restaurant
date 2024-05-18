@@ -1,0 +1,11 @@
+{
+	"folders": [
+		{
+			"name": "yeniklasor",
+			"path": "."
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "yeniklasor"
+	}
+}

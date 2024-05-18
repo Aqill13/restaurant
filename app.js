@@ -147,6 +147,14 @@ const b5_box_items = [
     img: "https://nationaltoday.com/wp-content/uploads/2021/07/shutterstock_1518533924-min.jpg",
     h3: "Turan Məmmədov",
   },
+  {
+    img: "https://nationaltoday.com/wp-content/uploads/2021/07/shutterstock_1518533924-min.jpg",
+    h3: "Turan Məmmədov",
+  },
+  {
+    img: "https://nationaltoday.com/wp-content/uploads/2021/07/shutterstock_1518533924-min.jpg",
+    h3: "Turan Məmmədov",
+  },
 
 ];
 
